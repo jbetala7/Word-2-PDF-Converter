@@ -1,0 +1,2 @@
+MainPackage=C:\Users\jayes\OneDrive\Desktop\Project\Word 2 PDF Converter\PackageProject\bin\x86\Release\Upload\PackageProject_1.0.0.0_x86.appx
+SymbolPackage=C:\Users\jayes\OneDrive\Desktop\Project\Word 2 PDF Converter\PackageProject\bin\x86\Release\Upload\PackageProject_1.0.0.0\PackageProject_1.0.0.0_x86.appxsym

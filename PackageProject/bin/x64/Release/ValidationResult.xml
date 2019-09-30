@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
+<REPORT xml:lang="en-IN" OVERALL_RESULT="PASS" VERSION="10.0.18362.1" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="Centennial" PUBLISHER_DISPLAY_NAME="CN=1E94497F-1F95-4165-B878-99627E6CE3E7" APP_NAME="28420JayeshBetala.Word2PDFConverter" APP_VERSION="1.0.0.0" OSVERSION="10.0.18362.0" OS="Microsoft Windows 10 Home Single Language" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="16393" X64_ONLY="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="16-08-2019 14:19:45" ID="e42254d17ec3604dada32323d834f232">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="3" TITLE="Digitally signed file test" RATIONALE="An Authenticode digital signature allows users to be sure that the software is genuine. It also allows detection if a file has been tampered with e.g. infected by a virus.">
+      <TEST INDEX="2" NAME="Install signed driver and executable files" DESCRIPTION="Install signed driver and executable files." EXECUTIONTIME="00h:00m:01s.90ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="6" TITLE="User account control (UAC) test" RATIONALE="Most applications do not require administrator privileges at run time, and should be just fine running as a standard-user. Windows applications must have a manifest (embedded or external) to define its execution level that tells OS the privileges needed to run the application.">
+      <TEST INDEX="11" NAME="User account control run level" DESCRIPTION="Windows® applications must have a manifest (embedded or external) to define its execution level that tells OS the privileges needed to run the application." EXECUTIONTIME="00h:00m:01s.19ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="12" TITLE="Package compliance test" RATIONALE="The package manifest was missing one or more required attributes.">
+      <TEST INDEX="77" NAME="Application count" DESCRIPTION="One package should not define more than one app in the manifest." EXECUTIONTIME="00h:00m:01s.31ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:02s.04ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="87" NAME="File association verbs" DESCRIPTION="Registry validation that no registered file association verbs are installed." EXECUTIONTIME="00h:00m:01s.59ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="86" NAME="Registry checks" DESCRIPTION="Registry validation that drivers are not installed and NT Services are not installed." EXECUTIONTIME="00h:00m:01s.36ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="90" NAME="Resource Packages" DESCRIPTION="Check if any resource packages contain PE files." EXECUTIONTIME="00h:00m:01s.51ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
+      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:01s.49ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:01s.97ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="15" TITLE="Supported API test" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Windows Store Apps.">
+      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:01s.46ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="19" TITLE="App manifest resources tests" RATIONALE="The App Package Manifest should have valid resources defined in the resources.pri file, as per the App Packaging Specification and App Manifest Schema.">
+      <TEST INDEX="45" NAME="App resources" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.98ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="61" NAME="Branding" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:02s.74ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
+      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:02s.19ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process.">
+      <TEST INDEX="91" NAME="Enterprise Features" DESCRIPTION="Check if any enterprise-only features are in the package (e.g. Modification Packages)." EXECUTIONTIME="00h:00m:01s.60ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.25ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources.">
+      <TEST INDEX="56" NAME="ExclusiveTo attribute" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:11s.27ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="57" NAME="Type location" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:00s.85ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="55" NAME="Type name case-sensitivity" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.85ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="54" NAME="Type name correctness" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:01s.08ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="58" NAME="General metadata correctness" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:10s.01ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="53" NAME="Properties" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:00s.90ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="25" TITLE="Package sanity test" RATIONALE="Validation of the app package contents to ensure correctness.">
+      <TEST INDEX="89" NAME="Archive files usage" DESCRIPTION="Packages should not contain PE files inside archive files." EXECUTIONTIME="00h:00m:01s.40ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="88" NAME="Blocked executables" DESCRIPTION="Detects if there are references to process launch APIs and blocked executables" EXECUTIONTIME="00h:00m:01s.84ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:01s.52ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+  </REQUIREMENTS>
+  <APPLICATIONS>
+    <Installed_Programs>
+      <Program Name="28420JayeshBetala.Word2PDFConverter" Type="Application" Source="AppxPackage" Publisher="CN=1E94497F-1F95-4165-B878-99627E6CE3E7" Version="1.0.0.0" Language="16393" InstallDate="" OSVersionAtInstallTime="10.0.0.18362" RootDirPath="C:\Windows\temp\appcert_30A8\28420JayeshBetala.Word2PDFConverter_1.0.0.0_x64__rqy9t9scp90r6" Id="00004c10e6e3c251aefce369ed2901c0cb8c00000940" HiddenArp="false">
+        <Indicators>
+          <WindowsStoreAppManifestIndicators>
+            <PackageManifest PackageFullName="28420JayeshBetala.Word2PDFConverter_1.0.0.0_x64__rqy9t9scp90r6">
+              <Package>
+                <Identity Name="28420JayeshBetala.Word2PDFConverter" Publisher="CN=1E94497F-1F95-4165-B878-99627E6CE3E7" Version="1.0.0.0" ProcessorArchitecture="x64"></Identity>
+                <Properties>
+                  <DisplayName>Word 2 PDF Converter</DisplayName>
+                  <PublisherDisplayName>Jayesh Betala</PublisherDisplayName>
+                  <Logo>Images\StoreLogo.png</Logo>
+                </Properties>
+                <Dependencies>
+                  <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.14393.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
+                  <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14393.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
+                </Dependencies>
+                <Resources>
+                  <Resource Language="EN-US"></Resource>
+                  <Resource Scale="200"></Resource>
+                </Resources>
+                <Applications>
+                  <Application Id="App" Executable="Word 2 PDF Converter\Word 2 PDF Converter.exe" EntryPoint="Windows.FullTrustApplication">
+                    <VisualElements DisplayName="Word 2 PDF Converter" Description="Simple Application to convert Word Documnets to PDF Files" BackgroundColor="transparent" Square150x150Logo="Images\Square150x150Logo.png" Square44x44Logo="Images\Square44x44Logo.png" ForegroundText="light">
+                      <DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" ShortName="Word 2 PDF Converter" Square71x71Logo="Images\SmallTile.png" Square310x310Logo="Images\LargeTile.png">
+                        <ShowNameOnTiles>
+                          <ShowOn Tile="square150x150Logo"></ShowOn>
+                        </ShowNameOnTiles>
+                      </DefaultTile>
+                      <SplashScreen Image="Images\SplashScreen.png"></SplashScreen>
+                      <InitialRotationPreference>
+                        <Rotation Preference="landscape"></Rotation>
+                      </InitialRotationPreference>
+                    </VisualElements>
+                  </Application>
+                </Applications>
+                <Capabilities>
+                  <Capability Name="runFullTrust"></Capability>
+                </Capabilities>
+              </Package>
+            </PackageManifest>
+            <BundleManifest PackageFamilyName="28420JayeshBetala.Word2PDFConverter_rqy9t9scp90r6">
+              <Bundle SchemaVersion="4.0">
+                <Identity Name="28420JayeshBetala.Word2PDFConverter" Publisher="CN=1E94497F-1F95-4165-B878-99627E6CE3E7" Version="1.0.0.0"></Identity>
+                <Packages>
+                  <Package Type="application" Version="1.0.0.0" Architecture="x64" FileName="PackageProject_1.0.0.0_x64.appx" Offset="61" Size="674453">
+                    <Resources>
+                      <Resource Language="EN-US"></Resource>
+                      <Resource Scale="200"></Resource>
+                    </Resources>
+                    <Dependencies>
+                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.14393.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
+                      <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14393.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
+                    </Dependencies>
+                  </Package>
+                  <Package Type="application" Version="1.0.0.0" Architecture="x86" FileName="PackageProject_1.0.0.0_x86.appx" Offset="674599" Size="674456">
+                    <Resources>
+                      <Resource Language="EN-US"></Resource>
+                      <Resource Scale="200"></Resource>
+                    </Resources>
+                    <Dependencies>
+                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.14393.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
+                      <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14393.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
+                    </Dependencies>
+                  </Package>
+                </Packages>
+              </Bundle>
+            </BundleManifest>
+          </WindowsStoreAppManifestIndicators>
+        </Indicators>
+        <StaticProperties>
+          <Files Id="">
+            <File Id="000009bafc030182e1cc735c1edb9c4e345a42c902f2" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="374139305" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\windows\temp\appcert_30a8\28420jayeshbetala.word2pdfconverter_1.0.0.0_x64__rqy9t9scp90r6\resources.pri" />
+            <File Id="00008365a091a5075d427fd06696076aac4ca154d276" Name="Word 2 PDF Converter.exe" ProductName="word 2 pdf converter" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="229376" SizeOfImage="229376" PeHeaderHash="010138625216085a7355939ae4d9e899a48252fbddcc" PeChecksum="0" CrcChecksum="-603814822" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="word 2 pdf converter" LegalCopyright="copyright ©  2019" LinkDate="09/17/2092 05:44:23" BinaryType="pe32_clr_il_prefer32" LowerCaseLongPath="c:\windows\temp\appcert_30a8\28420jayeshbetala.word2pdfconverter_1.0.0.0_x64__rqy9t9scp90r6\word 2 pdf converter\word 2 pdf converter.exe" />
+          </Files>
+        </StaticProperties>
+      </Program>
+    </Installed_Programs>
+  </APPLICATIONS>
+  <DEPENDENCY_INFORMATION>
+    <AitStaticAnalysis ProgramId="0000da39a3ee5e6b4b0d3255bfef95601890afd80709" AnalysisVersion="1.60" DictionaryVersion="3.4" Type="Max" Id="C:\Windows\temp\appcert_30A8\28420JayeshBetala.Word2PDFConverter_1.0.0.0_x64__rqy9t9scp90r6">
+      <AitFile FrameworkMoniker=".NETFramework,Version=v4.7.2" ErrorCode="0" Name="Word 2 PDF Converter.exe" Id="00008365a091a5075d427fd06696076aac4ca154d276">
+        <AitCategory Id="DotNetCom">
+          <AitFeature Name="{0002096b-0000-0000-c000-000000000046}" />
+          <AitFeature Name="{0002096c-0000-0000-c000-000000000046}" />
+          <AitFeature Name="{00020970-0000-0000-c000-000000000046}" />
+          <AitFeature Name="{00020a01-0000-0000-c000-000000000046}" />
+          <AitFeature Name="{00020a02-0000-0000-c000-000000000046}" />
+        </AitCategory>
+        <AitCategory Id="ApiStatic">
+          <AitFeature Name="mscoree.dll!_CorExeMain" />
+        </AitCategory>
+        <AitCategory Id="DotNet">
+          <AitFeature Name="System.Activator" />
+          <AitFeature Name="System.Activator.CreateInstance" />
+          <AitFeature Name="System.Boolean" />
+          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute" />
+          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute..ctor" />
+          <AitFeature Name="System.Collections.IEnumerable" />
+          <AitFeature Name="System.ComponentModel.ComponentResourceManager" />
+          <AitFeature Name="System.ComponentModel.ComponentResourceManager..ctor" />
+          <AitFeature Name="System.ComponentModel.EditorBrowsableAttribute" />
+          <AitFeature Name="System.ComponentModel.EditorBrowsableAttribute..ctor" />
+          <AitFeature Name="System.ComponentModel.EditorBrowsableState" />
+          <AitFeature Name="System.ComponentModel.IContainer" />
+          <AitFeature Name="System.Configuration.ApplicationSettingsBase" />
+          <AitFeature Name="System.Configuration.ApplicationSettingsBase..ctor" />
+          <AitFeature Name="System.Configuration.SettingsBase" />
+          <AitFeature Name="System.Configuration.SettingsBase.Synchronized" />
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute..ctor" />
+          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute..ctor" />
+          <AitFeature Name="System.Drawing.Color" />
+          <AitFeature Name="System.Drawing.Color.get_Firebrick" />
+          <AitFeature Name="System.Drawing.Color.get_RoyalBlue" />
+          <AitFeature Name="System.Drawing.Icon" />
+          <AitFeature Name="System.Drawing.Image" />
+          <AitFeature Name="System.Drawing.Point" />
+          <AitFeature Name="System.Drawing.Point..ctor" />
+          <AitFeature Name="System.Drawing.Size" />
+          <AitFeature Name="System.Drawing.Size..ctor" />
+          <AitFeature Name="System.Drawing.SizeF" />
+          <AitFeature Name="System.Drawing.SizeF..ctor" />
+          <AitFeature Name="System.Drawing.SystemColors" />
+          <AitFeature Name="System.Drawing.SystemColors.get_Control" />
+          <AitFeature Name="System.Enum" />
+          <AitFeature Name="System.Environment" />
+          <AitFeature Name="System.Environment.GetFolderPath" />
+          <AitFeature Name="System.EventArgs" />
+          <AitFeature Name="System.EventHandler" />
+          <AitFeature Name="System.EventHandler..ctor" />
+          <AitFeature Name="System.Exception" />
+          <AitFeature Name="System.Exception.get_Message" />
+          <AitFeature Name="System.Globalization.CultureInfo" />
+          <AitFeature Name="System.Guid" />
+          <AitFeature Name="System.Guid..ctor" />
+          <AitFeature Name="System.IDisposable" />
+          <AitFeature Name="System.IDisposable.Dispose" />
+          <AitFeature Name="System.IO.Path" />
+          <AitFeature Name="System.IO.Path.Combine" />
+          <AitFeature Name="System.IO.Path.GetDirectoryName" />
+          <AitFeature Name="System.IO.Path.GetFileNameWithoutExtension" />
+          <AitFeature Name="System.Object" />
+          <AitFeature Name="System.Object..ctor" />
+          <AitFeature Name="System.Reflection.Assembly" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute..ctor" />
+          <AitFeature Name="System.Reflection.DefaultMemberAttribute" />
+          <AitFeature Name="System.Reflection.DefaultMemberAttribute..ctor" />
+          <AitFeature Name="System.Reflection.Missing" />
+          <AitFeature Name="System.Reflection.Missing.Value" />
+          <AitFeature Name="System.Resources.ResourceManager" />
+          <AitFeature Name="System.Resources.ResourceManager..ctor" />
+          <AitFeature Name="System.Resources.ResourceManager.GetObject" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute..ctor" />
+          <AitFeature Name="System.Runtime.InteropServices.CoClassAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.CoClassAttribute..ctor" />
+          <AitFeature Name="System.Runtime.InteropServices.ComEventInterfaceAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.ComEventInterfaceAttribute..ctor" />
+          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute..ctor" />
+          <AitFeature Name="System.Runtime.InteropServices.DispIdAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.DispIdAttribute..ctor" />
+          <AitFeature Name="System.Runtime.InteropServices.GuidAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.GuidAttribute..ctor" />
+          <AitFeature Name="System.Runtime.InteropServices.InterfaceTypeAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.InterfaceTypeAttribute..ctor" />
+          <AitFeature Name="System.Runtime.InteropServices.Marshal" />
+          <AitFeature Name="System.Runtime.InteropServices.Marshal.GetTypeFromCLSID" />
+          <AitFeature Name="System.Runtime.InteropServices.TypeIdentifierAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.TypeIdentifierAttribute..ctor" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute..ctor" />
+          <AitFeature Name="System.RuntimeTypeHandle" />
+          <AitFeature Name="System.STAThreadAttribute" />
+          <AitFeature Name="System.STAThreadAttribute..ctor" />
+          <AitFeature Name="System.String" />
+          <AitFeature Name="System.String.Concat" />
+          <AitFeature Name="System.String.Empty" />
+          <AitFeature Name="System.String.IsNullOrEmpty" />
+          <AitFeature Name="System.Type" />
+          <AitFeature Name="System.Type.GetTypeFromHandle" />
+          <AitFeature Name="System.Type.Missing" />
+          <AitFeature Name="System.Type.get_Assembly" />
+          <AitFeature Name="System.Windows.Forms.Application" />
+          <AitFeature Name="System.Windows.Forms.Application.EnableVisualStyles" />
+          <AitFeature Name="System.Windows.Forms.Application.Run" />
+          <AitFeature Name="System.Windows.Forms.Application.SetCompatibleTextRenderingDefault" />
+          <AitFeature Name="System.Windows.Forms.AutoScaleMode" />
+          <AitFeature Name="System.Windows.Forms.Button" />
+          <AitFeature Name="System.Windows.Forms.Button..ctor" />
+          <AitFeature Name="System.Windows.Forms.ButtonBase" />
+          <AitFeature Name="System.Windows.Forms.ButtonBase.set_UseVisualStyleBackColor" />
+          <AitFeature Name="System.Windows.Forms.CommonDialog" />
+          <AitFeature Name="System.Windows.Forms.CommonDialog.ShowDialog" />
+          <AitFeature Name="System.Windows.Forms.ContainerControl" />
+          <AitFeature Name="System.Windows.Forms.ContainerControl.set_AutoScaleDimensions" />
+          <AitFeature Name="System.Windows.Forms.ContainerControl.set_AutoScaleMode" />
+          <AitFeature Name="System.Windows.Forms.Control" />
+          <AitFeature Name="System.Windows.Forms.Control.ResumeLayout" />
+          <AitFeature Name="System.Windows.Forms.Control.SuspendLayout" />
+          <AitFeature Name="System.Windows.Forms.Control.add_Click" />
+          <AitFeature Name="System.Windows.Forms.Control.get_Controls" />
+          <AitFeature Name="System.Windows.Forms.Control.set_BackColor" />
+          <AitFeature Name="System.Windows.Forms.Control.set_BackgroundImage" />
+          <AitFeature Name="System.Windows.Forms.Control.set_Enabled" />
+          <AitFeature Name="System.Windows.Forms.Control.set_ForeColor" />
+          <AitFeature Name="System.Windows.Forms.Control.set_Location" />
+          <AitFeature Name="System.Windows.Forms.Control.set_Name" />
+          <AitFeature Name="System.Windows.Forms.Control.set_Size" />
+          <AitFeature Name="System.Windows.Forms.Control.set_TabIndex" />
+          <AitFeature Name="System.Windows.Forms.Control.set_Text" />
+          <AitFeature Name="System.Windows.Forms.DialogResult" />
+          <AitFeature Name="System.Windows.Forms.FileDialog" />
+          <AitFeature Name="System.Windows.Forms.FileDialog.get_FileName" />
+          <AitFeature Name="System.Windows.Forms.FileDialog.set_FileName" />
+          <AitFeature Name="System.Windows.Forms.FileDialog.set_Filter" />
+          <AitFeature Name="System.Windows.Forms.FileDialog.set_InitialDirectory" />
+          <AitFeature Name="System.Windows.Forms.FileDialog.set_Title" />
+          <AitFeature Name="System.Windows.Forms.Form" />
+          <AitFeature Name="System.Windows.Forms.Form..ctor" />
+          <AitFeature Name="System.Windows.Forms.Form.Dispose" />
+          <AitFeature Name="System.Windows.Forms.Form.set_ClientSize" />
+          <AitFeature Name="System.Windows.Forms.Form.set_Icon" />
+          <AitFeature Name="System.Windows.Forms.Form.set_MaximizeBox" />
+          <AitFeature Name="System.Windows.Forms.MessageBox" />
+          <AitFeature Name="System.Windows.Forms.MessageBox.Show" />
+          <AitFeature Name="System.Windows.Forms.MessageBoxButtons" />
+          <AitFeature Name="System.Windows.Forms.MessageBoxIcon" />
+          <AitFeature Name="System.Windows.Forms.OpenFileDialog" />
+          <AitFeature Name="System.Windows.Forms.OpenFileDialog..ctor" />
+          <AitFeature Name="System.Windows.Forms.SaveFileDialog" />
+          <AitFeature Name="System.Windows.Forms.SaveFileDialog..ctor" />
+        </AitCategory>
+      </AitFile>
+    </AitStaticAnalysis>
+  </DEPENDENCY_INFORMATION>
+</REPORT>
